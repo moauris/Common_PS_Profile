@@ -6,6 +6,7 @@
 # IF THIS CODE AND INFORMATION IS MODIFIED, THE ENTIRE RISK OF USE OR RESULTS IN
 # CONNECTION WITH THE USE OF THIS CODE AND INFORMATION REMAINS WITH THE USER. 
 
+# Define Functions
 function help
 {
     get-help $args[0] | out-host -paging
@@ -78,7 +79,8 @@ function prompt {
 #>
 
 #Add .NET dir to Path
-$env:Path += "C:\windows\Microsoft.Net\Framework64\V4.0.30319;"
+$env:Path += ";C:\windows\Microsoft.Net\Framework64\V4.0.30319\"
+$env:Path += ";C:\Program Files\PostgreSQL\10\bin\"
 
 function prompt {
     if(
