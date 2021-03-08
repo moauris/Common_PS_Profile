@@ -6,19 +6,38 @@
 # 2020-03-08 Update:
 # - Checks for environments and listing all environment variables
 
+function Add-EnvPath
+{
+    Param(
+        [Parameter(Mandatory=$true)]
+        [string]$Path
+    )
+    if($Path -eq "")
+    {
+        return 23;
+    }
+    if(-not (Test-Path $Path))
+    {
+        Write-Debug "Path $Path does not exist, exiting.";
+        return; 
+    }
+    [string[]]$OldPaths = [System.Environment]::GetEnvironmentVariable("Path") -split ";"
 
-
-
-# Scanning for 
+    if(-not $OldPaths -contains $Path)
+    {
+        $OldPaths += $Path;
+        $NewPathString = $OldPaths -join ";";
+        [System.Environment]::SetEnvironmentVariable("Path", $NewPathString);
+    }
+}
 
 # Populating Environment Variables:
 # vim console text editor
-$env:Path += ";C:\Program Files (x86)\Vim\vim81"    
+Add-EnvPath "C:\Program Files (x86)\Vim\vim81"  
 #Add .NET dir to Path
-$env:Path += ";C:\windows\Microsoft.Net\Framework64\V4.0.30319\"
-$env:Path += ";C:\Program Files\PostgreSQL\10\bin\"
-#Add CMAM XML Reader to Path
-$env:Path += ";C:\Users\MoChen\source\repos\CMAM_xml_sql\CMAM_xml_sql\bin\Debug\"
+Add-EnvPath ";C:\windows\Microsoft.Net\Framework64\V4.0.30319\"
+#Add PostgreSQL to path
+Add-EnvPath ";C:\Program Files\PostgreSQL\10\bin\"
 
 # Set Aliases
 Set-Alias -Name vs -Value "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe"
@@ -33,15 +52,20 @@ if (Test-Path($ChocolateyProfile)) {
 
 # Profile Script Start: Scanning for dead $env:Path values
 $DeadEnvVarCounter = 0
-foreach($path in $env:Path -split ";")
+foreach($path in ($env:Path -split ";"))
 {
-    if(-not (Test-Path $path))
+    
+    if(($path -ne "") -and (-not (Test-Path $path)))
     { 
         Write-Warning "$path is not found";
         $DeadEnvVarCounter++
     }
 }
-Write-Host "There are $DeadEnvVarCounter dead environment variable(s) found, please fix";
+if($DeadEnvVarCounter -gt 0)
+{
+    Write-Host "There are $DeadEnvVarCounter dead " + `
+        "environment variable(s) found, please fix";
+}
 
 # Define Functions
 function help
