@@ -1,0 +1,16 @@
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\obj\Debug\net5.0\BitWiseAdd.csprojAssemblyReference.cache
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\obj\Debug\net5.0\BitWiseAdd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\obj\Debug\net5.0\BitWiseAdd.AssemblyInfoInputs.cache
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\obj\Debug\net5.0\BitWiseAdd.AssemblyInfo.cs
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\obj\Debug\net5.0\BitWiseAdd.csproj.CoreCompileInputs.cache
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\bin\Debug\net5.0\BitWiseAdd.exe
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\bin\Debug\net5.0\BitWiseAdd.deps.json
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\bin\Debug\net5.0\BitWiseAdd.runtimeconfig.json
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\bin\Debug\net5.0\BitWiseAdd.runtimeconfig.dev.json
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\bin\Debug\net5.0\BitWiseAdd.dll
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\bin\Debug\net5.0\ref\BitWiseAdd.dll
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\bin\Debug\net5.0\BitWiseAdd.pdb
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\obj\Debug\net5.0\BitWiseAdd.dll
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\obj\Debug\net5.0\ref\BitWiseAdd.dll
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\obj\Debug\net5.0\BitWiseAdd.pdb
+C:\Users\MoChen\Documents\WindowsPowerShell\Scripts\Utilities\BitWiseAdd\obj\Debug\net5.0\BitWiseAdd.genruntimeconfig.cache
